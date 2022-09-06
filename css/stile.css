@@ -1,0 +1,251 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Whitney,Helvetica,Arial,sans-serif;
+}
+
+
+/* utilities */
+.container{
+    width:75%;
+   margin:0 auto; 
+}
+img{
+    display: block;
+}
+.center{
+    align-items: center;
+    
+}
+.flexbox{
+    display:flex;
+   
+}
+
+.orizzontale{
+    justify-content: center;
+}
+
+.dashed{
+    border:2px dashed black;
+}
+.input-client{
+background-color: white;
+padding: 0.5em 0.8em;
+border-radius:30px;
+}
+/*-fine utilies*/
+
+
+/* header-top */
+
+.header-top{
+    height:50px;
+    
+    background-color: rgba(127,255,212,100%);
+}
+.header-top .container{
+    /*height:150px;*/
+    background-color: rgba(218, 165, 32, 100%);
+    justify-content: space-between;    
+    padding:0.5rem 0.3rem;   
+}
+.header-top .container .logo, .header-top .container .bottone{
+    width:25%;
+}
+
+.header-top .container nav{
+    width:50%;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+
+}
+
+.header-top nav ul{
+    list-style-type: none;
+    justify-content: space-between; 
+   
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 0.5em;
+}
+
+.header-top .container .bottone{
+    justify-content: flex-end;
+}
+
+
+/* fine header top */
+
+
+/* header-bottom */
+.header-bottom{
+    min-height:400px;
+    background-color: rgba(0,0,139, 100%);
+}
+
+.header-bottom .contenitore{
+    min-height: 350px;
+    width:65%;
+    margin:0 auto;
+    background-color: rgba(238, 130,238, 100%);
+    justify-content: center;
+    align-items: center;
+}
+.contenuto-header{
+    background-color: cadetblue;
+    text-align: center;
+}
+.header-bottom .secondario{
+    margin-top:1.2em;
+
+}
+
+
+
+/* comuni a main */
+.left{
+    width:60%;
+    min-height: 400px;
+    background-color: rgba(30, 144, 255, 100%);
+}
+.right{
+    width:40%;
+    min-height:400px;
+    background-color: rgba(255, 192,203, 100%);
+}
+/* fine-header-top */
+.content{
+    border: 2px solid black;
+}
+.riga.container{
+    
+    min-height: 500px;
+
+}
+main .content:nth-child(even){
+    background-color: rgba(211, 211, 211, 100%);
+}
+
+
+section.content:nth-child(4){
+    min-height:550px;
+
+}
+.content .riga.sfondo-verde{
+    background-color: rgba(34,139,34,100%);
+    min-height:500px;
+}
+
+.content .container .right .testo{
+    padding: 0rem 1.7rem;
+
+}
+
+.column.left img{
+    width:100%;
+}
+
+.testo.prima h2{
+    font-size: 2.5rem;
+    padding-right: 0.5em;
+}
+.testo.prima p{
+    margin-top:4rem;
+}
+
+.content:nth-of-type(2) .testo.prima{
+    padding-top:1rem;
+}
+.last-content{
+    width:80%;
+    margin:1rem auto 0;
+    text-align: center;
+}
+.last-content + img{
+    width:75%;
+    margin-left:2.8rem;
+}
+.download{
+    height:20%;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+/* footer-top */
+footer{
+    background-color: rgba(35,39,42,100%);
+    
+}
+.footer-top{
+    /*min-height:400px;*/
+    color:white;
+    padding-top:5px;
+    padding-bottom:15px;
+   
+}
+
+.container.row{
+    /*min-height:350px;*/
+    /*background-color: aqua;*/
+    border-bottom:2px solid white;
+    margin-top:1.2rem;
+}
+.row .column:not(.first){
+    width:calc(100% / 6);
+    /*background-color: rgba(32,178,170,100%);
+    border-color: white;*/
+}
+.column.first{
+    width:calc(100% / 3);
+    /*background-color: rgba(240,128,128, 100%);*/
+}
+.footer-top .column img{
+    height:15px;
+}
+.footer-top  .column.first div{
+    margin-top: 0.8rem;
+}
+.footer-top ul{
+list-style-type: none;
+}
+.footer-top ul li{
+    margin-bottom:1rem;
+}
+.footer-top .column.first{
+    padding-left: 6rem;
+}
+.footer-top ul li:first-child, .column.first h2{
+    color: rgba(114, 137, 218, 100%);
+}
+/* footer-bottom */
+
+
+.footer-bottom{
+    height:100px;
+     
+    align-items: flex-start;
+}
+
+.footer-bottom .container{
+    /*height:70px; debug*/
+    justify-content:space-between;
+    /*background-color: rgba(127, 255,212, 100%)*/;
+}
+.footer-bottom .input-client{
+    background-color: rgba(114, 137, 218, 100%);
+    color:white;
+    border-width:0;
+}
+
