@@ -39,20 +39,30 @@ img{
 background-color: white;
 padding: 0.5em 0.8em;
 border-radius:30px;
+border-width:0;
 }
 /*-fine utilies*/
 
 
 /* header-top */
 
+
+header{
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: 100%;
+    min-height: 300px;
+    color: white;
+}
+
 .header-top{
-    height:50px;
-    
-    background-color: rgba(127,255,212,100%);
+    /*height:50px;
+    color: white; debug*/ 
+    /*background-color: rgba(127,255,212,100%);*/
 }
 .header-top .container{
-    /*height:150px;*/
-    background-color: rgba(218, 165, 32, 100%);
+    /*height:150px;
+    background-color: rgba(218, 165, 32, 100%); debug*/
     justify-content: space-between;    
     padding:0.5rem 0.3rem;   
 }
@@ -62,8 +72,8 @@ border-radius:30px;
 
 .header-top .container nav{
     width:50%;
-    border-left: 2px dashed black;
-    border-right: 2px dashed black;
+    
+
 
 }
 
@@ -76,7 +86,7 @@ border-radius:30px;
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding-left: 0.5em;
 }
 
@@ -90,27 +100,44 @@ nav ul li a{
 
 /* header-bottom */
 .header-bottom{
-    min-height:400px;
-    background-color: rgba(0,0,139, 100%);
+    /*min-height:400px;
+    background-color: rgba(0,0,139, 100%); debug*/
+    
 }
 
 .header-bottom .contenitore{
-    min-height: 350px;
+    /*min-height: 350px; debug*/
     width:65%;
     margin:0 auto;
-    background-color: rgba(238, 130,238, 100%);
+    /*background-color: rgba(238, 130,238, 100%); debug*/
     justify-content: center;
     align-items: center;
 }
+
 .contenuto-header{
-    background-color: cadetblue;
+    /*background-color: cadetblue; debug*/
     text-align: center;
 }
+.contenuto-header h1{
+    margin-bottom:1rem;
+
+}
+.contenuto-heaader p{
+    padding-left: 0.9em;
+    padding-right:6.5em;
+}
+
 .header-bottom .secondario{
     margin-top:1.2em;
 
 }
-
+.bottone.secondario button:first-child{
+    margin-right: 0.5em;
+}
+.bottone.secondario button:last-child{
+    background-color: black;
+    color:white;
+}
 
 
 /* comuni a main */
@@ -246,6 +273,6 @@ list-style-type: none;
 .footer-bottom .input-client{
     background-color: rgba(114, 137, 218, 100%);
     color:white;
-    border-width:0;
+   
 }
 
